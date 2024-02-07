@@ -2,8 +2,8 @@
 =========================================================
 Name        : index.html
 Assignment  : Lab 4 Exercise B
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Zaira Ramji and Maryam Alayed
+Submission  : Feb 7, 2024
 Description : Responsive Layouts.
 =========================================================
 -->
@@ -14,10 +14,11 @@ Description : Responsive Layouts.
 	<!--
 		Ensure that your HTML file includes the viewport meta tag in the <head> section. 
 		This tag is essential for responsive design as it tells the browser how to control the page's dimensions and scaling.
-	-->
+	DONE -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- First, link the menu.css file here -->
+	<!-- First, link the menu.css file here, DONE -->
+	<link rel="stylesheet" type="text/css" href="menu.css">
 
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
@@ -48,35 +49,75 @@ Description : Responsive Layouts.
         .news-item { padding: 10px; }
 		
 		.row { 
-			/*I need some CSS codes.*/		
+
 		}
 
 		.large, .medium, .small {
-			/*I need some CSS codes.*/
+			width: 100%;
+			box-sizing:border-box;
+			float: left;
 		}
 		
 		.gap {
-			/*I need some CSS codes.*/
+			/*DONE*/
+			clear:both; /*The element is set below both the left and right float*/
+			height: 55px;
+			width: 100%;
 		}
 
-		@media screen and (min-width: 769px) {			
+		@media screen and (min-width: 769px) {	/*desktop*/		
 			.large { 
-				/*I need some CSS codes.*/
+				
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				width: 70%;
+				/*margin-bottom: 80px;*/	
 			}
-			.small { 
-				/*I need some CSS codes.*/
+			.small { 	
+				width: 30%;
+				/*margin-bottom: 80px;*/
+			 }
+			 .main {
+				width: 100%;
 			 }
 		}
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) { /*tablet*/
             /*I need some CSS codes.*/
+			.main{
+				margin-left: 0px;
+			}
+			.menu {
+			width: 100%;
+    		float: none; 
+			}
+			.medium {
+				width: 60%;
+				/*margin-bottom: 80px;*/
+			}
+			.small {
+				width: 40%;
+				/*margin-bottom: 80px;*/
+			}
         }
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 480px) { /*phone*/
 			/*I need some CSS codes.*/
+			.main{
+				margin-left: 0px;
+			}
+
+			.menu { 
+			width: 100%;
+    		float: none; 
+			}
+			.large, .medium, .small {
+			width: 100%;
+			float: none;
+			}
+			.h1{
+				font-size:18px
+			}
         }
 
         
@@ -135,7 +176,7 @@ Description : Responsive Layouts.
 				<!-- Medium news item -->
 				<div class="medium news-item">
 					<header>
-						<h1>Mahdi Ansari Takes a Historic Spacewalk Near the ISS</h1>
+						<h1>Zaira Ramji Takes a Historic Spacewalk Near the ISS</h1>
 					</header>
 					<img src="images/medium.jpg" alt="Medium Image">
 					<article>
@@ -143,7 +184,7 @@ Description : Responsive Layouts.
 						<p>In an unprecedented feat of human courage and technological prowess, astronaut Mahdi Ansari completed a spacewalk near the International Space Station (ISS), marking a new milestone in space exploration.</p>
 
 						<h3>A Breathtaking Journey</h3>
-						<p>Ansari, aboard the spacecraft Voyager X, ventured out into the void of space, capturing breathtaking views of Earth and conducting important research that could pave the way for future interstellar travel.</p>
+						<p>Zaira, aboard the spacecraft Voyager X, ventured out into the void of space, capturing breathtaking views of Earth and conducting important research that could pave the way for future interstellar travel.</p>
 
 						<h3>Pushing the Boundaries of Science</h3>
 						<p>The successful spacewalk not only demonstrates human resilience but also advances our understanding of space and our capabilities to explore further into the unknown.</p>
