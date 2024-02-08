@@ -43,17 +43,19 @@ Description : Responsive Layouts.
 		body { margin: 0; padding: 0;}
 		img { max-width: 100%; height: auto; }
         .container { width: 100%;}
-        .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width:100%; }        
+        .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px;}        
         .main { padding: 15px; margin-left: 150px;}		
         .footer { position: fixed; bottom: 0; width: 100%;}
         .news-item { padding: 10px; }
 		
 		.row { 
+			display: block;
+			box-sizing: border-box;
 
 		}
 
 		.large, .medium, .small {
-			width: 100%;
+			max-width: 100%;
 			box-sizing:border-box;
 			float: left;
 		}
@@ -67,7 +69,7 @@ Description : Responsive Layouts.
 
 		@media screen and (min-width: 769px) {	/*desktop*/		
 			.large { 
-				
+				width: 100%;
 			}
 			.medium { 
 				width: 70%;
@@ -77,14 +79,13 @@ Description : Responsive Layouts.
 				width: 30%;
 				
 			 }
-			 .main {
-				width: 100%;
-			 }
+			
 		}
 
         @media screen and (max-width: 768px) { /*tablet*/
             
 			.main{
+				width: 100%;
 				margin-left: 0px;
 			}
 			.menu {
@@ -108,12 +109,12 @@ Description : Responsive Layouts.
 			}
 
 			.menu { 
-			width: 100%;
-    		float: none; 
+				width: 100%;
+    			float: none; 
 			}
 			.large, .medium, .small {
-			width: 100%;
-			float: none;
+				width: 100%;
+				float: none;
 			}
 			.h1{
 				font-size:18px
