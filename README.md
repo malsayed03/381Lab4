@@ -7,5 +7,7 @@
 | Maryam Alsayed |
 | Zaira Ramji    |
 ## Screenshots:
+### Exercise B:
 ![Exercise B](./ExerciseB.gif)
+### Exercise C:
 ![Exercise C](./ExerciseC.gif)
