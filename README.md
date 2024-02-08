@@ -1,7 +1,6 @@
-# 381Lab4
 # Project Overview:
-Showcases how to make html webpages responsive to different screen sizes without the use of flex
-Shows responsive webpages with flex
+- Showcases how to make html webpages responsive to different screen sizes
+- Utilizes multiple methods for responsive web pages (with/without the use of flex)
 ## Team Members:
 | Name           |
 | -------------- |
